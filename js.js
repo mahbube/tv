@@ -32,29 +32,7 @@ window.onload=function(){
 	(function(j){
 		var hand = document.getElementsByClassName('hand').item(0);
 		liBtns.item(j).onclick=function(){
-			switch(j)
-			{
-			case 1:
-			deg=45 ;
-			break;
-			case 2:
-			deg=90;
-			break;
-			case 3:
-			deg=135 ;
-			break;
-			case 5:
-			deg=135+45;
-			break;
-			case 6:
-			deg=135+90 ;
-			break;
-			case 7:
-			deg=135+135;
-			break;
-			default:
-			deg=135+135+45;
-			}
+			deg =j*45;
 			go2slide(j);
 			hand.style.webkitTransform = 'rotate('+deg+'deg)'; //chrome
 			hand.style.MozTransform ='rotate('+deg+'deg)'; //Firefox
